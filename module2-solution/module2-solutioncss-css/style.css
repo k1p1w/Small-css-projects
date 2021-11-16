@@ -82,12 +82,12 @@
 	}
 	
 	.info {
-		border-color: #556b2f;
+		border: 3px solid #556b2f;
 		background: #faebd7;
 	}
 	
 	.title {
-		border-color: #556b2f;
+		border: 3px solid #556b2f;
 		background: #faebd7;
 	}
 }
@@ -103,12 +103,12 @@
 	}
 	
 	.info {
-		border-color: #556b2f;
+		border: 3px solid #556b2f;
 		background: #8fbc8f;
 	}
 	
 	.title {
-		border-color: #556b2f;
+		border: 3px solid #556b2f;
 		background: #8fbc8f;
 	}
 }
