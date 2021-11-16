@@ -86,7 +86,7 @@
 	.info {
 		color:#00ffff;
 	}
-
+}
 /* /.mobile media query */
 @media (max-width: 767px) {
 	.box {
