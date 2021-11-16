@@ -85,6 +85,11 @@
 		border-color: #556b2f;
 		background-color: #faebd7;
 	}
+	
+	.title__container {
+		border-color: #556b2f;
+		background-color: #faebd7;
+	}
 }
 
 /* /.mobile media query */
@@ -98,6 +103,11 @@
 	}
 	
 	.info {
+		border-color: #556b2f;
+		background-color: #8fbc8f;
+	}
+	
+	.title__container {
 		border-color: #556b2f;
 		background-color: #8fbc8f;
 	}
