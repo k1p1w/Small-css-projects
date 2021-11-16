@@ -75,40 +75,21 @@
 	.box {
 		flex-wrap: wrap;
 	}
+	
 	.card {
 		margin: 15px;
 		margin-top: 10px;
 		flex: 40%;
 	}
-	
-	.info {
-		border: 3px solid #556b2f;
-		background: #faebd7;
-	}
-	
-	.title {
-		border: 3px solid #556b2f;
-		background: #faebd7;
-	}
-}
 
 /* /.mobile media query */
 @media (max-width: 767px) {
 	.box {
 		flex-direction: column;
 	}
+	
 	.card {
 		width: 100%;
 		margin-top: 10px;
-	}
-	
-	.info {
-		border: 3px solid #556b2f;
-		background: #8fbc8f;
-	}
-	
-	.title {
-		border: 3px solid #556b2f;
-		background: #8fbc8f;
 	}
 }
