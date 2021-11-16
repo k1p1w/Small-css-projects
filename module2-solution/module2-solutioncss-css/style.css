@@ -79,7 +79,9 @@
 		margin: 15px;
 		margin-top: 10px;
 		flex: 40%;
-		
+	}
+	
+	.info {
 		border-color: #556b2f;
 		background-color: #faebd7;
 	}
@@ -93,7 +95,9 @@
 	.card {
 		width: 100%;
 		margin-top: 10px;
-		
+	}
+	
+	.info {
 		border-color: #556b2f;
 		background-color: #8fbc8f;
 	}
