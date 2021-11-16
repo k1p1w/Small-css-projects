@@ -74,7 +74,6 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 	.box {
 		flex-wrap: wrap;
-		background: #ffa500;
 	}
 	
 	.card {
@@ -91,7 +90,6 @@
 @media (max-width: 767px) {
 	.box {
 		flex-direction: column;
-		background: #ffa500;
 	}
 	
 	.card {
