@@ -74,25 +74,27 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 	.box {
 		flex-wrap: wrap;
-		border-color: #556b2f;
-		background-color: #faebd7;
 	}
 	.card {
 		margin: 15px;
 		margin-top: 10px;
 		flex: 40%;
+		
+		border-color: #556b2f;
+		background-color: #faebd7;
 	}
 }
 
 /* /.mobile media query */
 @media (max-width: 767px) {
 	.box {
-		border-color: #556b2f;
-		background-color: #8fbc8f;
 		flex-direction: column;
 	}
 	.card {
 		width: 100%;
 		margin-top: 10px;
+		
+		border-color: #556b2f;
+		background-color: #8fbc8f;
 	}
 }
