@@ -26,9 +26,17 @@
 	background: #999;
 }
 
+.title__container {
+	display: flex;
+	justify-content: end;
+
+	height: 20%;
+	background-color: #999;
+}
+
 .title {
 	border: 3px solid #333;
-	width: 30%;
+	width: 31%;
 	min-width: max-content;
 	background-color: #999;
 	margin: -3px -3px 0 0;
@@ -38,14 +46,6 @@
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 600;
 	font-size: 20px;
-}
-
-.title__container {
-	display: flex;
-	justify-content: end;
-
-	height: 20%;
-	background-color: #999;
 }
 
 .chicken {
@@ -70,27 +70,25 @@
 	font-weight: 600;
 }
 
-/*/.tablet media query */
+/* /.Tablet media query */
 @media (min-width: 768px) and (max-width: 1024px) {
 	.box {
 		flex-wrap: wrap;
 	}
-	
 	.card {
 		margin: 15px;
 		margin-top: 10px;
 		flex: 40%;
 	}
 }
-/* /.mobile media query */
+
+/* /.Mobile media query */
 @media (max-width: 767px) {
 	.box {
 		flex-direction: column;
 	}
-	
 	.card {
 		width: 100%;
 		margin-top: 10px;
 	}
-	
 }
