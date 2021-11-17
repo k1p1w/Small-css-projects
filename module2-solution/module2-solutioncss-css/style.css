@@ -70,6 +70,7 @@
 	font-weight: 600;
 }
 
+/* /.Tablet media query */
 @media (min-width: 768px) and (max-width: 1024px) {
 	.box {
 		flex-wrap: wrap;
@@ -81,7 +82,7 @@
 	}
 }
 
-/* /.mb */
+/* /.Mobile media query */
 @media (max-width: 767px) {
 	.box {
 		flex-direction: column;
@@ -91,3 +92,5 @@
 		margin-top: 10px;
 	}
 }
+
+
