@@ -1709,6 +1709,12 @@ a {
 	.instagram {
 		justify-content: center;
 	}
+	
+	/* Nav toggle */
+	.nav-toggle {
+		top: 20px;
+		right: 20px;
+	}
 }
 
 @media (max-width: 375px) {
