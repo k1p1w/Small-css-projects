@@ -106,3 +106,15 @@ function getRandomRGB() {
 
 	return `rgb(${r}, ${g}, ${b})`
 }
+
+function winTheGame() {
+	function kill() {
+		const circle = document.querySelector('.circle')
+
+		if (circle) {
+			circle.click()
+		}
+	}
+
+	setInterval(kill, 42)
+}
