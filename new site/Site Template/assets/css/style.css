@@ -1725,12 +1725,6 @@ a {
 	.header__logo {
 		font-size: 20px;
 	}
-	
-	/* Nav toggle */
-	.nav-toggle {
-		top: 16px;
-    		right: 16px;	
-	}
 
 	/* Section */
 	.section__header {
