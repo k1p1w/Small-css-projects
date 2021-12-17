@@ -107,17 +107,22 @@ hr {
 	z-index: 1000;
 }
 
-.header--fixed {
+.header.fixed {
 	background-color: #e98384;
-
-	padding: 10px 0;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 
+	padding: 10px 0;
+
 	transform: translate3d(0, 0, 0);
+}
+
+.header.active {
+	background-color: #e98384;
 }
 
 .header__inner {
@@ -183,13 +188,26 @@ hr {
 
 /* Nav toggle */
 .nav-toggle {
+	display: none;
+
 	width: 30px;
 	padding: 10px 0;
+
+	font-size: 0;
+	color: transparent;
+	cursor: pointer;
+
+	border: 0;
+	background: none;
 
 	position: absolute;
 	top: 24px;
 	right: 24px;
 	z-index: 1;
+}
+
+.nav-toggle:focus {
+	outline: 0;
 }
 
 .nav-toggle__item {
@@ -205,6 +223,12 @@ hr {
 	bottom: 0;
 	left: 0;
 	margin: auto;
+
+	transition: background 0.2s linear;
+}
+
+.nav-toggle.active .nav-toggle__item {
+	background: none;
 }
 
 .nav-toggle__item:before,
@@ -218,6 +242,8 @@ hr {
 	position: absolute;
 	left: 0;
 	z-index: 1;
+
+	transition: transform 0.2s linear;
 }
 
 .nav-toggle__item:before {
@@ -227,6 +253,17 @@ hr {
 .nav-toggle__item:after {
 	bottom: -8px;
 }
+
+.nav-toggle.active .nav-toggle__item:before {
+	transform-origin: left top;
+	transform: rotate(45deg) translate3d(3px, 0px, 0);
+}
+
+.nav-toggle.active .nav-toggle__item:after {
+	transform-origin: left bottom;
+	transform: rotate(-45deg) translate3d(-1px, 3px, 0);
+}
+
 /* Button */
 
 .btn {
@@ -1440,9 +1477,35 @@ a {
 		min-height: 650px;
 	}
 
+	/* Header */
+	.header {
+		padding: 10px 0;
+	}
+
 	/* Nav */
 	.nav {
 		display: none;
+		width: 100%;
+
+		position: absolute;
+		top: 100%;
+		left: 0;
+
+		background-color: #e98384;
+	}
+
+	.nav.active {
+		display: block;
+	}
+
+	.nav__link {
+		display: block;
+		margin: 0;
+		padding: 8px 20px;
+	}
+
+	.nav-toggle {
+		display: block;
 	}
 
 	/* Section */
@@ -1723,7 +1786,15 @@ a {
 
 	/* Header */
 	.header__logo {
-		font-size: 20px;
+		font-size: 25px;
+	}
+
+	/* Nav */
+	.nav-toggle {
+		top: 20px;
+		right: 20px;
+
+		width: 25px;
 	}
 
 	/* Section */
