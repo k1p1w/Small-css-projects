@@ -347,7 +347,7 @@ a {
 /* Section */
 
 .section {
-        margin: auto;
+        margin-left: 10px;
 	padding: 80px 0px;
 }
 
