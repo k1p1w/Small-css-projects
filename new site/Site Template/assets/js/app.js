@@ -46,8 +46,6 @@ $(function () {
 
 		$("#nav_toggle").on("click", function (event) {
 			event.preventDefault();
-
-
 		})
 	});
 
@@ -58,7 +56,7 @@ $(function () {
 		var $this = $(this),
 			blockId = $this.data('collapse');
 
-			$this.toggleClass("active");
+		$this.toggleClass("active");
 	})
 
 	/* Slider */
