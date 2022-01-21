@@ -618,7 +618,7 @@ footer .copyright {
 	text-align: center;
 	flex-direction: column;
 
-	background-image: url(../img/banners/b1.jpg);
+	background-image: url("../img/banners/b1.jpg");
 	background-size: cover;
 
 	padding: 14px;
