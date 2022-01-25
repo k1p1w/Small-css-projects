@@ -846,6 +846,129 @@ footer .copyright {
 
 /* ------------------------------ End About Page ----------------------------- */
 
+/* ------------------------------- Contact Page ------------------------------ */
+/* Contact Details Elements */
+#contact-details {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#contact-details .details {
+	width: 40%;
+}
+
+#contact-details .details span,
+#form-details form span {
+	font-size: 12px;
+}
+
+#contact-details .details h2,
+#form-details form h2 {
+	font-size: 26px;
+	line-height: 35px;
+
+	padding: 20px 0;
+}
+
+#contact-details .details h3 {
+	font-size: 16px;
+
+	padding-bottom: 15px;
+}
+
+#contact-details .details li {
+	list-style: none;
+	display: flex;
+
+	padding: 10px 0;
+}
+
+#contact-details .details li i {
+	font-size: 14px;
+	padding-right: 22px;
+}
+
+#contact-details .details li p {
+	font-size: 14px;
+	margin: 0;
+}
+
+#contact-details .map {
+	width: 55%;
+	height: 400px;
+}
+
+#contact-details .map iframe {
+	width: 100%;
+	height: 100%;
+}
+
+/* From Details Elements */
+#form-details {
+	display: flex;
+	justify-content: space-between;
+
+	margin: 30px;
+	padding: 80px;
+	border: 1px solid #e1e1e1;
+}
+
+#form-details form {
+	width: 65%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea {
+	width: 100%;
+	outline: none;
+
+	border: 1px solid #e1e1e1;
+	padding: 12px 15px;
+	margin-bottom: 20px;
+}
+
+#form-details form button {
+	background-color: #088178;
+	color: #fff;
+}
+
+#form-details .people div {
+	display: flex;
+	align-items: flex-start;
+
+	padding-bottom: 25px;
+}
+
+#form-details .people div img {
+	width: 65px;
+	height: 65px;
+
+	object-fit: cover;
+	margin-right: 15px;
+}
+
+#form-details .people div p {
+	margin: 0;
+
+	font-size: 13px;
+	line-height: 25px;
+}
+
+#form-details .people div p span {
+	display: block;
+
+	font-size: 16px;
+	font-weight: 600;
+	color: #000;
+}
+
+/* ----------------------------- End Contact Page ---------------------------- */
+
 /* .
 ⠄⠄⠄⢰⣧⣼⣯⠄⣸⣠⣶⣶⣦⣾⠄⠄⠄⠄⡀⠄⢀⣿⣿⠄⠄⠄⢸⡇⠄⠄
 ⠄⠄⠄⣾⣿⠿⠿⠶⠿⢿⣿⣿⣿⣿⣦⣤⣄⢀⡅⢠⣾⣛⡉⠄⠄⠄⠸⢀⣿⠄
@@ -916,6 +1039,16 @@ footer .copyright {
 	/* Blog Elements */
 	#blog {
 		padding: 100px 80px 0 80px;
+	}
+
+	/* ----------------------------------- Contact Page ----------------------------------- */
+	/* Form Details Element */
+	#form-details {
+		padding: 40px;
+	}
+
+	#form-details form {
+		width: 60%;
 	}
 }
 
@@ -1095,10 +1228,20 @@ footer .copyright {
 	#blog {
 		padding: 100px 60px 0 60px;
 	}
+
+	/* ----------------------------------- Contact Page ----------------------------------- */
+	/* Form Details Element */
+	#form-details {
+		padding: 40px;
+	}
+
+	#form-details form {
+		width: 50%;
+	}
 }
 
 @media (max-width: 477px) {
-	/* ------------------------------------ First Page ------------------------------------ */
+	/* ------------------------------------ First Page ----------------------------------- */
 	/* Global Elements */
 	h1 {
 		font-size: 38px;
@@ -1251,6 +1394,35 @@ footer .copyright {
 
 	#about-app .video {
 		width: 100%;
+	}
+
+	/* ----------------------------------- Contact Page ----------------------------------- */
+	/* Form Details Element */
+	#contact-details {
+		flex-direction: column;
+	}
+
+	#contact-details .details {
+		width: 100%;
+
+		margin-bottom: 30px;
+	}
+
+	#contact-details .map {
+		width: 100%;
+	}
+
+	#form-details {
+		flex-wrap: wrap;
+
+		margin: 10px;
+		padding: 30px 10px;
+	}
+
+	#form-details form {
+		width: 100%;
+
+		margin-bottom: 30px;
 	}
 }
 
