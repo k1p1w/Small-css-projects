@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style/style.css">
+	<title>Hue rotate effect</title>
+</head>
+
+<body>
+	<div class="container">
+		<div id="box" class="img-box"></div>
+		<div class="content-box">
+			<input type="range" name="" id="range" min="0" max="360">
+
+			<p><span id="demo"></span>deg</p>
+		</div>
+	</div>
+	<script>
+		let img_box = document.getElementById("box");
+		let num_value = document.getElementById("range");
+		let output = document.getElementById("demo");
+		output.textContent = num_value.value;
+
+		num_value.oninput = function () {
+			output.textContent = this.value
+		};
+
+		num_value.addEventListener("change", function () {
+			img_box.style.filter = "hue-rotate(" + num_value.value + "deg)"
+		});
+
+	</script>
+</body>
+
+</html>
